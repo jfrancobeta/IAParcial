@@ -39,7 +39,17 @@ El proyecto está dividido en cinco ejercicios, cada uno abordando un aspecto cl
 - **Archivo relacionado:** `Ejercicio5.py`
 
 
-## Instalación
+Diferencias entre modelos encoder-only, decoder-only y encoder-decoder
+Los modelos encoder-only son ideales para tareas de clasificación y análisis de texto. Los modelos decoder-only son más adecuados para generación de texto, como chatbots. Los modelos encoder-decoder son útiles para tareas de traducción y resumen.
+
+Concepto de "temperatura" en generación de texto
+La temperatura controla la aleatoriedad en la generación de texto. Valores bajos generan respuestas más conservadoras, mientras que valores altos producen respuestas más creativas.
+
+Técnicas para reducir "alucinaciones" en chatbots
+
+A nivel de inferencia: Ajustar la temperatura y usar técnicas como top-p sampling.
+A nivel de prompt engineering: Proporcionar instrucciones claras y específicas al modelo.
+
 1. Clona este repositorio:
    ```bash
    git clone https://github.com/jfrancobeta/IAParcial.git
