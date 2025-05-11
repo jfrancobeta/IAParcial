@@ -39,7 +39,7 @@ El proyecto está dividido en cinco ejercicios, cada uno abordando un aspecto cl
 - **Archivo relacionado:** `Ejercicio5.py`
 
 
-#Diferencias entre modelos:
+## Diferencias entre modelos:
 
 Encoder-only: Analiza el texto para entenderlo, pero no genera respuestas. Bueno para tareas de clasificación.
 
@@ -47,10 +47,10 @@ Decoder-only: Genera texto basado en un contexto dado, ideal para chatbots que r
 
 Encoder-decoder: Combina análisis y generación, útil para tareas complejas como traducción o resúmenes.
 
-#Temperatura en la generación de texto:
+## Temperatura en la generación de texto:
 La temperatura ajusta la aleatoriedad en las respuestas del chatbot con una temperatura baja, las respuestas son más predecibles y coherentes con una alta, son más creativas pero pueden ser menos coherentes. Se debe ajustar según el tipo de interacción que se desee (formal vs. creativa).
 
-#Reducir "alucinaciones" en chatbots:
+## Reducir "alucinaciones" en chatbots:
 Para reducir respuestas incorrectas, podemos usar:
 
 Inferencia: Aplicar restricciones para mejorar la precisión.
