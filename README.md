@@ -39,13 +39,23 @@ El proyecto está dividido en cinco ejercicios, cada uno abordando un aspecto cl
 - **Archivo relacionado:** `Ejercicio5.py`
 
 
-Diferencias entre modelos encoder-only, decoder-only y encoder-decoder
-Los modelos encoder-only son ideales para tareas de clasificación y análisis de texto. Los modelos decoder-only son más adecuados para generación de texto, como chatbots. Los modelos encoder-decoder son útiles para tareas de traducción y resumen.
+#Diferencias entre modelos:
 
-Concepto de "temperatura" en generación de texto
-La temperatura controla la aleatoriedad en la generación de texto. Valores bajos generan respuestas más conservadoras, mientras que valores altos producen respuestas más creativas.
+Encoder-only: Analiza el texto para entenderlo, pero no genera respuestas. Bueno para tareas de clasificación.
 
-Técnicas para reducir "alucinaciones" en chatbots
+Decoder-only: Genera texto basado en un contexto dado, ideal para chatbots que responden preguntas.
+
+Encoder-decoder: Combina análisis y generación, útil para tareas complejas como traducción o resúmenes.
+
+#Temperatura en la generación de texto:
+La temperatura ajusta la aleatoriedad en las respuestas del chatbot con una temperatura baja, las respuestas son más predecibles y coherentes con una alta, son más creativas pero pueden ser menos coherentes. Se debe ajustar según el tipo de interacción que se desee (formal vs. creativa).
+
+#Reducir "alucinaciones" en chatbots:
+Para reducir respuestas incorrectas, podemos usar:
+
+Inferencia: Aplicar restricciones para mejorar la precisión.
+
+Prompt engineering: Diseñar preguntas claras y específicas para guiar mejor la respuesta y evitar errores.
 
 A nivel de inferencia: Ajustar la temperatura y usar técnicas como top-p sampling.
 A nivel de prompt engineering: Proporcionar instrucciones claras y específicas al modelo.
